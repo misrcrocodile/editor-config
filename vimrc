@@ -48,6 +48,15 @@ Plugin 'tpope/vim-fugitive'
 " Powerline
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 
+" vim plugin to search using the silver search(ag)
+Plugin 'ervandew/ag'
+
+Plugin 'tmhedberg/SimpylFold'
+" Vim theme
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'valloric/youcompleteme'
+Plugin 'pangloss/vim-javascript'
+Plugin 'mattn/emmet-vim'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -71,14 +80,12 @@ nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
-
 " Enable folding
 set foldmethod=indent
 set foldlevel=99
 
 " Enable folding with the spacebar
 nnoremap <space> za
-Plugin 'tmhedberg/SimpylFold'
 
 au BufNewFile,BufRead *.py 
   \ set tabstop=4
@@ -96,6 +103,9 @@ au BufNewFile,BufRead *.js, *.html, *.css
 
 " System clipboard
 set clipboard=unamed
+set nu
 set nocompatible              " be iMproved, required
 filetype off                  " required
-
+" Press F4 to toggle highlighting on/off, and show current value.
+noremap <F4> :set hlsearch! hlsearch?<CR>
+autocmd VimEnter * NERDTree
