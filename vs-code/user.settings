@@ -1,5 +1,11 @@
-
-rkbench.iconTheme": "material-icon-theme",
-    "editor.renderWhitespace": "all"
+{
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.renderWhitespace": "all",
+    "workbench.colorTheme": "Visual Studio Dark",
+    "editor.formatOnPaste": true,
+    "editor.fontSize": 14,
+    "window.zoomLevel": 0,
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true
 }
-
