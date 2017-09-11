@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script>
+    var _ = {};
+    _.isObject = function (obj) {
+      var type = typeof obj;
+      return type === 'function' || type === 'object' && !!obj;
+    }
+
+    _.isArray = Array.isArray || function (obj) {
+      return toString.call(obj) === '[object Array]';
+    };
+
+    var an = {};
+    for (var i = 24; i < 30; i++) {
+      var index = i > 9 ? "" + i : "0" + i;
+      an["7月" + index + "日"] = i;
+    }
+    for (var i = 1; i < 30; i++) {
+      var index = i > 9 ? "" + i : "0" + i;
+      an["8月" + index + "日"] = i;
+    }
+    for (var i = 1; i < 7; i++) {
+      var index = i > 9 ? "" + i : "0" + i;
+      an["9月" + index + "日"] = i;
+    }
+    window.an = an;
+
+
+    function getSum(an, strPattern) {
+      var sum = 0;
+      var listProp = Object.keys(an);
+      for (var i = 0; i < listProp.length; i++) {
+        if (listProp[i].startsWith(strPattern)) {
+          var temp = parseInt(an[listProp[i]]);
+          if (temp) sum += temp;
+        }
+      }
+      return sum;
+    }
+
+    function getListWeight(an, strPattern) {
+      var weight = [];
+      for (var i = 0; i < 31; i++) {
+        weight.push(0);
+      }
+      var listProp = Object.keys(an);
+      for (var i in listProp) {
+        var val = strPattern.exec(listProp[i]);
+        if (!val) continue;
+        if (!!val && parseInt(val[1])) {
+          weight[parseInt(val[1])] = an[listProp[i]];
+        }
+      }
+      return weight;
+    }
+    console.log(getSum(an, "8"));
+    console.log(getListWeight(an, /8月(\d.*)日.*/));
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
