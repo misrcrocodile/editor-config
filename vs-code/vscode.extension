@@ -1,12 +1,17 @@
+# code --list-extensions | xargs -L 1 echo code --install-extension >> file
+
 code --install-extension DotJoshJohnson.xml
 code --install-extension PKief.material-icon-theme
 code --install-extension Zignd.html-css-class-completion
 code --install-extension abusaidm.html-snippets
+code --install-extension azemoh.one-monokai
 code --install-extension dbaeumer.vscode-eslint
 code --install-extension donjayamanne.githistory
+code --install-extension eamodio.gitlens
 code --install-extension ecmel.vscode-html-css
 code --install-extension eg2.vscode-npm-script
 code --install-extension eriklynd.json-tools
+code --install-extension esbenp.prettier-vscode
 code --install-extension fabianlauer.vs-code-xml-format
 code --install-extension felixfbecker.php-intellisense
 code --install-extension formulahendry.code-runner
@@ -24,4 +29,6 @@ code --install-extension patbenatar.advanced-new-file
 code --install-extension slevesque.vscode-hexdump
 code --install-extension vscodevim.vim
 code --install-extension vsmobile.vscode-react-native
+code --install-extension wayou.vscode-todo-highlight
+code --install-extension wix.vscode-import-cost
 code --install-extension yzhang.markdown-all-in-one

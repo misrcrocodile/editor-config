@@ -1,11 +1,14 @@
 {
     "workbench.iconTheme": "material-icon-theme",
     "editor.renderWhitespace": "all",
-    "workbench.colorTheme": "Visual Studio Dark",
-    "editor.formatOnPaste": true,
+    "workbench.colorTheme": "One Monokai",
     "editor.fontSize": 14,
     "window.zoomLevel": 0,
-    "editor.formatOnSave": true,
     "editor.tabSize": 2,
-    "editor.insertSpaces": true
+    "editor.insertSpaces": true,
+    "editor.wordWrap": "on",
+    "explorer.confirmDragAndDrop": false,
+    "gitlens.advanced.messages": {
+        "suppressShowKeyBindingsNotice": true
+    }
 }
