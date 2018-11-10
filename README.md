@@ -5,3 +5,6 @@ i'm using vundle(http://vimawesome.com/plugin/vundle) and search plugin in this 
 Using:
 
 copy vimrc to root folder and rename it to .vimrc
+
+
+'wmctrl -R chrome
