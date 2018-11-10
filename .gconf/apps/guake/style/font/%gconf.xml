@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<gconf>
+	<entry name="allow_bold" mtime="1541826145" schema="/schemas/apps/guake/style/font/allow_bold" type="bool" value="true"/>
+	<entry name="palette_name" mtime="1541826145" schema="/schemas/apps/guake/style/font/palette_name" type="string">
+		<stringvalue>Hurtado</stringvalue>
+	</entry>
+	<entry name="palette" mtime="1541826145" schema="/schemas/apps/guake/style/font/palette" type="string">
+		<stringvalue>#575757575757:#FFFF1B1B0000:#A5A5DFDF5555:#FBFBE7E74A4A:#484863638787:#FCFC5E5EF0F0:#8585E9E9FEFE:#CBCBCBCBCBCB:#252525252525:#D4D41C1C0000:#A5A5DFDF5555:#FBFBE7E74949:#8989BDBDFFFF:#BFBF0000C0C0:#8585E9E9FEFE:#DBDBDBDBDBDB:#DADADBDBDADA:#000000000000</stringvalue>
+	</entry>
+	<entry name="color" mtime="1501341783" schema="/schemas/apps/guake/style/font/color"/>
+	<entry name="style" mtime="1526689389" schema="/schemas/apps/guake/style/font/style" type="string">
+		<stringvalue>Ubuntu Mono 13</stringvalue>
+	</entry>
+</gconf>
