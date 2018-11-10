@@ -32,3 +32,6 @@ code --install-extension vsmobile.vscode-react-native
 code --install-extension wayou.vscode-todo-highlight
 code --install-extension wix.vscode-import-cost
 code --install-extension yzhang.markdown-all-in-one
+code --install-extension Kelvin.vscode-sshfs
+code --install-extension liximomo.sftp
+code --install-extension PKief.material-icon-theme
